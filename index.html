@@ -8,7 +8,49 @@
 
 </head>
 <body>
-
+    <div class="container">
+        <header>
+            <h1>WebDevQuiz</h1>
+            <p>Test your knowledge!</p>
+        </header>
+        
+        <div class="info-container">
+            <div id="question-counter">Question: 1/10</div>
+            <div id="timer">Time: <span id="time">0</span>s</div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+        </div>
+        
+        <div id="quiz-container">
+            <div class="question" id="question">
+                <!-- Question will be inserted here -->
+            </div>
+            
+            <ul class="options" id="options">
+                <!-- Options will be inserted here -->
+            </ul>
+            
+            <div class="buttons">
+                <button id="prev-button" disabled>Previous</button>
+                <button id="next-button" disabled>Next</button>
+            </div>
+        </div>
+        
+        <div id="result-container">
+            <h2>Quiz Completed!</h2>
+            <div id="score">
+                <!-- Score will be displayed here -->
+            </div>
+            <div id="summary">
+                <!-- Summary will be displayed here -->
+            </div>
+            <button id="restart-button">Restart Quiz</button>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
