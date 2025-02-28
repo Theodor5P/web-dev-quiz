@@ -102,4 +102,23 @@ const quizData = [
     }
 ];
 
+// DOM elements
+const questionElement = document.getElementById('question');
+const optionsElement = document.getElementById('options');
+const questionCounterElement = document.getElementById('question-counter');
+const timerElement = document.getElementById('time');
+const progressBarElement = document.getElementById('progress-bar');
+const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+const quizContainer = document.getElementById('quiz-container');
+const resultContainer = document.getElementById('result-container');
+const scoreElement = document.getElementById('score');
+const summaryElement = document.getElementById('summary');
+const restartButton = document.getElementById('restart-button');
 
+// Quiz state
+let currentQuestion = 0;
+let score = 0;
+let timer;
+let timeSpent = 0;
+let userAnswers = new Array(quizData.length).fill(null);
